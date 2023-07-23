@@ -1,0 +1,26 @@
+
+
+in Node JS, each JavaScript file is treated as a seperate module.
+
+1) Built-in Core Modules.
+    --> this doesn't required additional installations.
+    --> these are part of Node JS Core.
+    --> Ex :-- http , fs(file System) , path , os , util
+
+2) local Modules.
+    --> these are created by devloper or user.
+    --> It is a file which is having JS functions, Objects, or arrays any 
+            kind of code that can be imported using "require()".
+
+3) NPM (Node packages Manager)
+    --> NPM is the default package manager for Node.js, 
+    --> To use an NPM module, you typically need to install it using npm install
+
+4) ES-6 Modules
+    --> new features to import and export a code from module
+    --> import name from "./module-path"
+    --> export varible (which having some code related to JS)
+    --> export default varible (to export a default JS code)
+    --> for using ES6 module syntax the extension (.mjs) Ex:-- filename.mjs 
+        (or) set  "type" : "module" in the package.json that indicates your project using ES6 syntax.
+    

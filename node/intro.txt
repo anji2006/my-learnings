@@ -1,0 +1,31 @@
+1. Node js is a JavaScript environment that executes JS code outside a web browser.
+
+// why Node js
+    --> It has massive community, Open Source
+    --> Huge number of Third party packages availble.
+    --> Cross platform ( windows, linux , Mac OS ...)
+
+// How to Run JS code ???
+    1) Node REPL (Read-eval-Print-loop) (Similar to browser)
+        --> Type "node" in terminal to start
+        --> ".exit" to exit from Node REPL
+    
+    2) Node CLI (command Line Interface)
+        --> Type "node" "filename.js" to Read JS
+
+// Initilaze node project
+    1) create a folder (mkdir my_project)
+    2) change directory to my_project (cd my_project)
+    3) npm init (initilize the node)
+    4) set all fileds in while initilize Ex:--
+            {
+                "name": "my-node-project",
+                "version": "1.0.0",
+                "type": "module",
+                "main": "index.js",
+                "scripts": {
+                    "start": "node index.js"
+                },
+                "license": "MIT"
+            }
+    5) use .js extension for you file to read it as JS ES6 module
