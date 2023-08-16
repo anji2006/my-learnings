@@ -1,5 +1,16 @@
 1. Node js is a JavaScript environment that executes JS code outside a web browser.
 
+// It Will works Using Concept of Non-blocking I/O .
+    ---> as It is single Treaded Language It will assgin the task to the other actions.
+    ---> After that task is completed that will send back to client
+    ===> libuv (package)
+            |--> Build in C Language
+                |--> uses system kernel
+                    |--> has multiple Threads
+    ---> Indirectly It uses Multi Threads
+// Asynchronous 
+    ---> to send the response to client Node will use Asynchronous
+
 // why Node js
     --> It has massive community, Open Source
     --> Huge number of Third party packages availble.

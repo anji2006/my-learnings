@@ -1,6 +1,6 @@
 const express = require("express");
 
-const app = express();
+// const app = express();
 
 app.listen(8999, () => {
   console.log("this is appis listening at port: 8999");
@@ -28,3 +28,25 @@ app.get("/", (req, res) => {
 
 // Middleware to parse request body as JSON
 app.use(express.json());
+
+const cors = require('cors');
+const app = express();
+
+// Enable CORS for all routes
+app.use(cors());
+
+
+const allowedOrigins = ['http://example.com', 'http://localhost:3000'];
+
+// Enable CORS for specific origins
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (allowedOrigins.includes(origin) || !origin) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
+  })
+);
